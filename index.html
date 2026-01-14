@@ -9,20 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
+    <!-- daisyUi cdn -->
 
-    <!-- tailwind cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }  
-                }
-            }
-        }
-    </script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/7bb5eb1c04.js" crossorigin="anonymous"></script>
@@ -36,13 +30,72 @@
     <title>Vegetables Shop</title>
 </head>
 
-<body class="font-sora">
-    <header>
-        <h1>hero section AAAAA</h1>
-    </header>
-    <main>
+<body class="font-sora ">
+    <header class=" bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]  ">
+        <nav class=" container mx-auto  flex items-center justify-between border-b  md:border-b-0 border-[#179800] p-5 ">
+            <img class=" md:hidden  " src="c2-assets/logo-footer.png" alt="">
+            <img class=" hidden  md:block" src=" c2-assets/logo-header.png" alt="">
+            <ul class="  hidden md:block md:flex items-center gap-5">
+                <li><a href="">Product</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact Us</a></li>
 
+            </ul>
+            <div class=" hidden md:block md:flex items-center gap-4">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <button class="btn border border-[#179800] ">Login</button>
+                <button class="btn bg-[#179800] ">Register</button>
+            </div>
+            <i class="md:hidden text-[#179800]  fa-solid fa-bars"></i>
+        </nav>
+        <div class="container mx-auto mt-24 px-5">
+            <div class="text-center">
+                <h1 class="text-6xl">Freshness <span class="text-[#179800]">You Can <br>
+                        Count </span>On, Prices You’ll Love!
+                </h1>
+                <p class="text-[#111111]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry
+                    staples, we’ve got you
+                    covered every day!
+                </p>
+            </div>
+            <img class="mx-auto" src="c2-assets/hero-vegetables.png" alt="">
+        </div>
+    </header>
+    <main class="container mx-auto">
+
+        <section class="m-10 space-y-10">
+            <h1 class="text-3xl font-bold text-[#179800]">Services</h1>
+            <div class=" flex flex-col md:flex-row  gap-5 ">
+                <div class=" space-y-4  bg-[#EFEBE3] text-center rounded-lg   p-5 ">
+                    <div class="mx-auto w-36 h-36 bg-white rounded-full flex items-center justify-center">
+                        <img class=" " src="c2-assets/service.png" alt="">
+                    </div>
+                    <h3 class="text-2xl font-bold">24/7 Services</h3>
+                    <p class="text-[#111111]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt</p>
+                </div>
+                <div class="space-y-4   bg-[#EFEBE3] text-center rounded-lg gap-4 p-5 ">
+                    <div class="mx-auto w-36 h-36 bg-white rounded-full flex items-center justify-center">
+                        <img class=" " src="c2-assets/delivery.png" alt="">
+                    </div>
+                    <h3 class="text-2xl font-bold">Fast Delivery</h3>
+                    <p class="text-[#111111]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt</p>
+                </div>
+                <div class="space-y-4   bg-[#EFEBE3] text-center rounded-lg gap-4 p-5 ">
+                    <div class="mx-auto w-36 h-36 bg-white rounded-full flex items-center justify-center">
+                        <img class=" " src="c2-assets/healthy.png" alt="">
+                    </div>
+                    <h3 class="text-2xl font-bold">Healthy Products </h3>
+                    <p class="text-[#111111]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt</p>
+                </div>
+            </div>
+        </section>
     </main>
+
+
     <footer>
 
     </footer>
