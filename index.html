@@ -67,7 +67,7 @@
             <img class="mx-auto" src="c2-assets/hero-vegetables.png" alt="">
         </div>
     </header>
-    <main class=" ">
+    <main class=" relative">
 
         <!-- service section -->
         <section class="container mx-auto m-10 space-y-10  ">
@@ -235,7 +235,7 @@
         </section>
 
         <!-- arrival and offers section -->
-        <section class="container mx-auto space-y-10 m-10">
+        <section class="   container mx-auto space-y-10 m-10 p-10">
             <h1 class="text-3xl font-bold text-[#179800]">Arrival & Offers</h1>
             <div class="  flex flex-col md:flex-row  justify-between gap-4  ">
                 <!--left card -->
@@ -262,14 +262,18 @@
                 </div>
             </div>
 
+
         </section>
 
-        <!-- news section -->
-        <section class="container mx-auto bg-[#EFEBE3] m-10">
+        <!-- news section for backup -->
+
+
+
+        <!-- <section class="  absolute ml-36  mt-[30px] container mx-auto bg-[#EFEBE3] m-10">
             <div class="flex flex-col md:flex-row justify-center items-center md:gap-20 ">
-                 
-                    <img   src="c2-assets/vegetable-busket.png" alt="">
-                 
+
+                <img src="c2-assets/vegetable-busket.png" alt="">
+
                 <div class="flex flex-col space-y-4 items-center md:items-start text-center md:text-left p-5">
                     <h3 class="font-semibold   text-4xl text-[#179800]">Get Grocery News!</h3>
                     <p class="text-[#111111]">Exclusive training tips, ticks, product deals and more.</p>
@@ -277,11 +281,57 @@
                     <button class="btn w-40 bg-[#179800] ">Subscribe</button>
                 </div>
             </div>
+        </section> -->
+
+        <section class="absolute left-1/2 top-3/6 lg:top-1/6
+         -translate-x-1/2
+         bg-[#EFEBE3]
+         rounded-xl shadow-xl
+         w-[90%]  z-20">
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-10 p-10">
+                <img src="c2-assets/vegetable-busket.png" alt="">
+
+                <div class="flex flex-col space-y-4 text-center md:text-left">
+                    <h3 class="font-semibold text-4xl text-[#179800]">
+                        Get Grocery News!
+                    </h3>
+                    <p class="text-[#111111]">
+                        Exclusive training tips, tricks, product deals and more.
+                    </p>
+                    <input class="p-5 rounded-lg w-full lg:w-80" type="email" placeholder="Enter Email">
+                    <button class="btn w-40 bg-[#179800] mx-auto md:mx-0">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
         </section>
+
     </main>
-     
-    <footer>
-        
+
+
+
+
+    <footer class="  bg-[#179800] w-full mt-80 lg:mt-72  ">
+        <div class="container mx-auto grid grid-rows-1 md:grid-cols-3 justify-between text-white pt-96 pb-20 px-10 items-end">
+            <div>
+                <img src="c2-assets/logo-footer.png" alt="">
+                <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+
+            </div>
+            <div>
+                <p>Product</p>
+                <p>Services</p>
+                <p>Contact Us</p>
+            </div>
+
+            <div>
+                <h3>Follow Us</h3>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
     </footer>
 </body>
 
